@@ -24,7 +24,11 @@ class Game {
     }
    
     play(){
-       form.hide();   
+      
+      form.hide();  
+      background(0);
+      image(backgroundImage2,0,0, displayWidth , displayHeight)
+        
     }
 
 }
