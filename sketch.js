@@ -15,7 +15,7 @@ blackhat = loadImage("Images/black hat.png");
 bluehat = loadImage("Images/blue hat.png");
 redhat = loadImage("Images/red hat.png")
 yellowhat = loadImage("Images/yellow hat.png")
-purplehat = loadImage("Images/purple hat.png")
+//purplehat = loadImage("Images/purple hat.png")
 whitehat = loadImage("Images/white hat.png");
 greenhat = loadImage("Images/green hat.png")
 }
