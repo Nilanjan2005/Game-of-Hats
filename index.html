@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    
     <title>Game of hats</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
@@ -31,9 +32,25 @@
     
     <script src="js/Form.js"></script>
     <script src="js/Game.js"></script>
+    <script src="js/Task.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
     <script src="sketch.js"></script>
+    <div class ="container">
+      <div id="question-container" class="hide">
+      <div id="question">Questions</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 1</button>
+      </div>
+    </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn" >Start</button>
+        <button  id="next-btn" class="next-btn btn hide" >Next</button>
+      </div>
+    </div>
   </body>
 </html>
