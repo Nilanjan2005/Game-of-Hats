@@ -4,7 +4,8 @@ var character,characterImage;
 var backgroundImage2;
 var gameState = 0;
 var database;
-var game, form, button;
+var game, form, button,task;
+var black,blue,red,yellow,purple,white,green;
 var blackhat,bluehat,redhat,yellowhat,purplehat,whitehat,greenhat;
 
 function preload(){
@@ -15,12 +16,12 @@ blackhat = loadImage("Images/black hat.png");
 bluehat = loadImage("Images/blue hat.png");
 redhat = loadImage("Images/red hat.png")
 yellowhat = loadImage("Images/yellow hat.png")
-//purplehat = loadImage("Images/purple hat.png")
+purplehat = loadImage("Images/purple hat.png")
 whitehat = loadImage("Images/white hat.png");
 greenhat = loadImage("Images/green hat.png")
 }
 function setup() {
-  createCanvas(displayWidth - 20, displayHeight-40);
+  createCanvas(displayWidth - 70, displayHeight-100);
 
   database = firebase.database();
   game = new Game();
@@ -30,7 +31,7 @@ function setup() {
 }
 
 function draw() {
-  background(backgroundImage);  
+  //background(backgroundImage);  
  
   //if(mousePressedOver(backgroundImage)){
  //   game.update(1)
@@ -38,6 +39,7 @@ function draw() {
   
   
   if(gameState ===1){
+   
     clear();
     game.play()
 
