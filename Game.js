@@ -19,30 +19,37 @@ class Game {
       if(gameState === 0){
         form = new Form()
         form.display();
-    
-      }
+       }
+
 
     }
    
     play(){
+      // image(redhat,1000,100,110,110);
       
-      form.hide();  
-      background(0);
-      task = new Task();
-      task.display(); 
-      image(backgroundImage2,0,0, displayWidth , displayHeight);
-      character = createSprite(200,400);
-      character.addImage("character",characterImage); 
-     // red = createSprite(800,100)
-      //red = addImage(redhat)
-      image(redhat,1100,100,110,110);
-      
-      var correctAns = "2"
-      if(character === correctAns){
 
-        red.x = 1;
-        red.y = -2;
-      }
+form.hide();
+
+character = createSprite(200,400);
+character.addImage("character",characterImage); 
+red = createSprite(1250,150)
+red.addImage(redhat)
+red.scale = 0.45;
+task = new Task();
+task.display();
+
+
+
+      // form.hide();  
+      // background(0);
+    
+      // image(backgroundImage2,0,0, displayWidth , displayHeight);
+     
     }
-
+play2(){
+  task.hide();
+  form.hide();
+  yellow = createSprite(1250,150);
+  yellow.addImage(yellowhat)
+}
 }

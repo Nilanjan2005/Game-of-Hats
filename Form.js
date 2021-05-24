@@ -4,8 +4,8 @@ class Form{
     constructor(){
         this.button= createButton("PLAY");
         this.greeting = createElement('h2');
-        this.title = createElement('h10');
-       
+        this.title = createElement('h2');
+      //  this.button2 = createButton('Peter')
       
     }
     
@@ -13,19 +13,16 @@ class Form{
         this.greeting.hide();
         this.button.hide();
         this.title.hide();
-        
-     //   this.input.hide();
+      //   this.button2.hide();
     }
     
     
     display(){
-    background(0);
-    image(backgroundImage,0,0, displayWidth , displayHeight);
      this.title.html("Game of Hats");
      this.title.position(displayWidth/2-50,20);
 
      this.button.position(displayWidth/2,displayHeight/2);
-     
+   //   this.button2.position(displayWidth/4,displayHeight/4+80);
      
      this.greeting.html("All the best !");
      this.greeting.position(displayWidth/2-70,displayHeight/4)
@@ -34,11 +31,9 @@ class Form{
      
      
      this.button.mousePressed(()=>{
-     this.button.hide();
-     
-     gameState =1;
-   
- })
+      this.button.hide();
+      game.play();
+    })
     }
 
     
