@@ -14,7 +14,7 @@ class Task{
         this.button4.hide();
         this.button5.hide();
         this.question.hide();
-       this.greeting.hide();
+        this.greeting.hide();
      
     }
     display(){
@@ -34,23 +34,20 @@ class Task{
          this.question.hide();
          red.x = 200;
          red.y = 200;
-         fill("Green")
-         textSize(40)
-        text("Correct",600,300);
-       this.greeting.html("Correct Answer")
+          this.greeting.html("Correct Answer")
 //    gameState === 2;
-applause.play();      
+        applause.play();      
     })
-
+    
          this.button3.mousePressed(()=>{
             this.button2.hide();
              this.button3.hide();
              this.button4.hide();
              this.button5.hide();
-             fill("Red")
-             textSize(40)
+             fill("Red");
+             textSize(40);
             text("Wrong",600,300);
-          this.greeting.html('wrong')
+          this.greeting.html('wrong');
           glass_break.play();
          })
 

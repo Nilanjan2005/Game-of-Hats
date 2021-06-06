@@ -43,11 +43,9 @@ function draw() {
    
     // clear();
      game.play();
-
+  game.play2();
    }
-   if (gameState === 2){
-     game.play2();
-   }
+ 
   // red.display();
   drawSprites();
 }

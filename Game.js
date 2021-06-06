@@ -38,18 +38,9 @@ red.scale = 0.45;
 task = new Task();
 task.display();
 
-
-
-      // form.hide();  
-      // background(0);
-    
-      // image(backgroundImage2,0,0, displayWidth , displayHeight);
-     
+ 
     }
-play2(){
-  task.hide();
-  form.hide();
-  yellow = createSprite(1250,150);
-  yellow.addImage(yellowhat)
-}
+    play2(){
+      play.hide();
+    }
 }
