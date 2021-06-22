@@ -4,9 +4,11 @@ class Task{
         this.button3 = createButton('Peetr');
         this.button4 = createButton('fnfn');
         this.button5 = createButton('fvfv');
-        this.question  = createElement('h2')
+        this.question  = createElement('h2');
         this.greeting = createElement('h2');
-        // this.button6 = createButton('Next')   
+        this.title = createElement('h2');
+
+       
      }
     hide(){
         this.button2.hide();
@@ -15,16 +17,17 @@ class Task{
         this.button5.hide();
         this.question.hide();
         this.greeting.hide();
-     
+        this.title.hide();
     }
     display(){
         this.button2.position(displayWidth/4+270,displayHeight/4+100);
-        this.button3.position(displayWidth/4+140,displayHeight/4+100);
+        this.button3.position(displayWidth/4+100,displayHeight/4+100);
         this.button4.position(displayWidth/4+270,displayHeight/4+160);
-        this.button5.position(displayWidth/4+140,displayHeight/4+160);
+        this.button5.position(displayWidth/4+100,displayHeight/4+160);
       
-        this.greeting.position(600,300)
-
+        this.greeting.position(600,300); 
+        this.title.position(600,200);
+       
        this.button2.mousePressed(()=>{
        
         this.button2.hide();
@@ -35,7 +38,8 @@ class Task{
          red.x = 200;
          red.y = 200;
           this.greeting.html("Correct Answer")
-//    gameState === 2;
+          this.greeting.style('color','rgb(0, 255, 0)');
+        this.title.html("press SPACE key for task-2")
         applause.play();      
     })
     
@@ -44,22 +48,21 @@ class Task{
              this.button3.hide();
              this.button4.hide();
              this.button5.hide();
-             fill("Red");
-             textSize(40);
-            text("Wrong",600,300);
-          this.greeting.html('wrong');
+            this.greeting.html('wrong');
+          this.greeting.style('color','red');
+          this.title.html("press SPACE key for task-2")
           glass_break.play();
          })
 
          this.button4.mousePressed(()=>{
-            // fill("Red")
-            // textSize(40)   
-        //    text("wrong",600,300);
-           this.button2.hide();
+        
+          this.button2.hide();
            this.button3.hide();
            this.button4.hide();
              this.button5.hide();
              this.greeting.html("Wrong Answer");
+             this.greeting.style('color','red');
+             this.title.html("press SPACE key for task-2")
              glass_break.play()
          })
 
@@ -68,16 +71,15 @@ class Task{
            this.button3.hide();
            this.button4.hide();
              this.button5.hide();
-            //  fill("Red")
-            //  textSize(40)
-            // text("wrong",600,300);
-         this.greeting.html("You're answer is wrong");
+            this.greeting.html("You're answer is wrong");
+            this.greeting.style('color','red');
+            this.title.html("press SPACE key for task-2")
          glass_break.play()
          })
         
         this.question.html("Question :- Peter's father has five sons. The names of four sons are Fefe, Fifi, Fafa and Fufu respectively. What is the name of the fifth son? 🤔")
-        this.question.position(120,10);
-       
+        this.question.position(70,10);
+       this.question.style('color','white')
     }
     
 }

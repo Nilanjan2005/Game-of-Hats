@@ -9,11 +9,11 @@ canvas {
   border: 2px solid black;
 }
 button{
-  outline-color: red;
+  outline-color: rgb(31, 1, 1);
   background:orangered;
   font-size: large;
-  width: 120px;
+  width: 140px;
   height: 40px;
-  border-radius: 11px;
+  border-radius: 15px;
   
 }
