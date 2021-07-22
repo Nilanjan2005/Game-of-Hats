@@ -6,9 +6,9 @@ class Form{
         this.greeting = createElement('h2');
         this.title = createElement('h2');
       //  this.button2 = createButton('Peter')
-      
+        
     }
-    
+  
     hide(){
         this.greeting.hide();
         this.button.hide();

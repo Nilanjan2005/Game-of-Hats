@@ -42,12 +42,22 @@ task.display();
     }
     play2(){
      task.hide();
-    red.destroy();
+    
+     red.destroy();
      yellow = createSprite(1250,150);
      yellow.addImage(yellowhat);
      yellow.scale = 0.65;
      task2 = new Task2();
      task2.display();
-   
+  
+
+    }
+    play3(){
+    yellow.destroy();
+      task2.hide();
+      task3 = new Task3();
+      task3.display();
+      // image(task2IMG_,50,200,);
+      
     }
 }
