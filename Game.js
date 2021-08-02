@@ -28,17 +28,17 @@ class Game {
       // image(redhat,1000,100,110,110);
       
 
-form.hide();
+    form.hide();
 
-character = createSprite(200,400);
-character.addImage("character",characterImage); 
-red = createSprite(1250,150)
-red.addImage(redhat)
-red.scale = 0.55;
-task = new Task();
-task.display();
+    character = createSprite(200,400);
+    character.addImage("character",characterImage); 
+    red = createSprite(1250,150)
+    red.addImage(redhat)
+    red.scale = 0.55;
+    task = new Task();
+    task.display();
 
- 
+
     }
     play2(){
      task.hide();
@@ -46,18 +46,34 @@ task.display();
      red.destroy();
      yellow = createSprite(1250,150);
      yellow.addImage(yellowhat);
-     yellow.scale = 0.65;
+     yellow.scale = 0.85;
      task2 = new Task2();
      task2.display();
   
-
-    }
+       }
     play3(){
+
+      character.destroy();
     yellow.destroy();
       task2.hide();
-      task3 = new Task3();
-      task3.display();
+      interval = new Interval();
+      interval.display();
       // image(task2IMG_,50,200,);
+      character = createSprite(200,400);
+      character.addImage(character2Img);
+
+      table = createSprite(1000,300,500,480);
+      table.shapeColor =  rgb(73,73,255);
       
+      
+      yellow = createSprite(980,450);
+      yellow.addImage(yellowhat);
+      yellow.scale = 0.85;
+    
+      red = createSprite(980,270)
+      red.addImage(redhat)
+      red.scale = 0.55;
+  
+
     }
 }

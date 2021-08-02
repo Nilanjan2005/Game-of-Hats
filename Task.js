@@ -52,6 +52,11 @@ class Task{
           this.greeting.style('color','red');
           this.title.html("press SPACE key for task-2")
           glass_break.play();
+          red.destroy();  
+          burst = createSprite(1250,150);
+          burst.addImage("burst",burstImg);
+          burst.scale = 0.7;
+       
          })
 
          this.button4.mousePressed(()=>{
@@ -63,7 +68,12 @@ class Task{
              this.greeting.html("Wrong Answer");
              this.greeting.style('color','red');
              this.title.html("press SPACE key for task-2")
-             glass_break.play()
+             glass_break.play();
+             red.destroy();  
+             burst = createSprite(1250,150);
+             burst.addImage("burst",burstImg);
+             burst.scale = 0.7;
+             
          })
 
          this.button5.mousePressed(()=>{
@@ -75,11 +85,16 @@ class Task{
             this.greeting.style('color','red');
             this.title.html("press SPACE key for task-2")
          glass_break.play()
+         red.destroy();  
+         burst = createSprite(1250,150);
+         burst.addImage("burst",burstImg);
+         burst.scale = 0.7;
+      
          })
         
         this.question.html("Question :- Peter's father has five sons. The names of four sons are Fefe, Fifi, Fafa and Fufu respectively. What is the name of the fifth son? 🤔")
         this.question.position(70,10);
-       this.question.style('color','white')
+       this.question.style('color','red')
     }
     
 }

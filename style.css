@@ -10,10 +10,15 @@ canvas {
 }
 button{
   outline-color: rgb(31, 1, 1);
-  background:orangered;
+  background :rgb(255, 136, 0);
   font-size: large;
   width: 140px;
-  height: 40px;
+  height: 30px;
   border-radius: 15px;
-  
+ 
 }
+
+
+
+
+
