@@ -34,7 +34,10 @@ class Task2{
        
 
        this.button6.mousePressed(()=>{
-       
+        // burst = createSprite(1250,150);
+        // burst.addImage("burst",burstImg);
+        // burst.scale = 0.7;
+   
         this.button6.hide();
         this.button7.hide();
         this.button8.hide();
@@ -45,11 +48,7 @@ class Task2{
         this.title2.html("press ENTER key for task-3");
         glass_break.play();   
         yellow.destroy();  
-        burst = createSprite(1250,150);
-        burst.addImage("burst",burstImg);
-        burst.scale = 0.7;
-        
-    })
+   })
     
          this.button7.mousePressed(()=>{
             this.button6.hide();
@@ -65,7 +64,10 @@ class Task2{
          })
 
          this.button8.mousePressed(()=>{
-        
+          // burst = createSprite(1250,150);
+          // burst.addImage("burst",burstImg);
+          // burst.scale = 0.7;
+     
           this.button6.hide();
            this.button7.hide();
            this.button8.hide();
@@ -75,28 +77,24 @@ class Task2{
              this.title2.html("press ENTER key for task-3")
              glass_break.play();
              yellow.destroy();  
-             burst = createSprite(1250,150);
-             burst.addImage("burst",burstImg);
-             burst.scale = 0.7;
              
       
          })
 
          this.button9.mousePressed(()=>{
+          // burst = createSprite(1250,150);
+          // burst.addImage("burst",burstImg);
+          // burst.scale = 0.7;
+     
              this.button6.hide();
            this.button7.hide();
            this.button8.hide();
              this.button9.hide();
-            this.greeting2.html("You're answer is wrong");
+            this.greeting2.html("Wrong Answer");
             this.greeting2.style('color','red');
             this.title2.html("press ENTER key for task-3")
          glass_break.play()
          yellow.destroy();  
-         burst = createSprite(1250,150);
-         burst.addImage("burst",burstImg);
-         burst.scale = 0.7;
-         
-  
          })
         
          this.button10.mousePressed(()=>{

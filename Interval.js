@@ -6,7 +6,7 @@ class Interval{
         this.greetings2 = createElement('h2')
         this.button11 = createButton('Task3➡️');
         this.greetings3 = createElement('h2');
-     }
+            }
 hide(){
 this.button11.hide();
 this.greetings.hide();
@@ -26,6 +26,7 @@ this.greetings3.hide();
 
      this.button11.position(1250,600);
      this.greetings3.position(100,50);
+
      this.button11.mousePressed(()=>{
     this.button11.hide();  
     this.greetings.hide();
@@ -35,8 +36,13 @@ this.greetings3.hide();
    table.destroy();   
    this.greetings3.html("TASK -3");
    this.greetings3.style('color','Blue');
-   
+    blue = createSprite(1250,150);
+    blue.addImage(bluehat);
+
+  task3 = new Task3();
+  task3.display();
 })
+
  }
 
 

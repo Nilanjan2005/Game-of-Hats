@@ -5,11 +5,11 @@ var character2,character2Img;
 var backgroundImage2;
 var gameState = 0;
 var database;
-var game, form, button,task,task2,interval;
+var game, form, button,task,task2,interval,task3;
 var black,blue,red,yellow,purple,white,green;
 var blackhat,bluehat,redhat,yellowhat,purplehat,whitehat,greenhat;
 var table,Restart,task2IMG_;
-var applause,glass_break,burstImg,burst;
+var applause,glass_break,burstImg,burst,sound2;
 
 function preload(){
       // backgroundImage = loadImage("Images/background.png")
@@ -25,7 +25,9 @@ function preload(){
       greenhat = loadImage("Images/green hat.png");
       task2IMG_ = loadImage("Images/task2.jpg")
       applause = loadSound("applause_sound.wav");
+      sound2 = loadSound("sound2.mp3");
       glass_break = loadSound("glass_break.wav");
+
     burstImg = loadImage("Images/burst.png")
 }
 function setup() {
@@ -52,6 +54,7 @@ function draw() {
   drawSprites();
 }
 function keyPressed(){
+  
   if(keyCode === 32){
 
     game.update(1);

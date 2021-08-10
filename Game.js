@@ -1,6 +1,6 @@
 class Game {
     constructor(){}
-    
+  
     getState(){
       var gameStateRef  = database.ref('gameState');
       gameStateRef.on("value",function(data){
@@ -42,20 +42,22 @@ class Game {
     }
     play2(){
      task.hide();
-    
      red.destroy();
+    //  burst.destroy();
+
      yellow = createSprite(1250,150);
      yellow.addImage(yellowhat);
      yellow.scale = 0.85;
+
      task2 = new Task2();
      task2.display();
-  
        }
     play3(){
-
-      character.destroy();
-    yellow.destroy();
-      task2.hide();
+       task2.hide();
+      //  burst.destroy();
+       character.destroy();
+     yellow.destroy();
+    
       interval = new Interval();
       interval.display();
       // image(task2IMG_,50,200,);
