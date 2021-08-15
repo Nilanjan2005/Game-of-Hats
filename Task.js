@@ -5,7 +5,7 @@ class Task{
         this.button4 = createButton('fnfn');
         this.button5 = createButton('fvfv');
         this.question  = createElement('h2');
-        this.greeting = createElement('h2');
+        this.feedback = createElement('h2');
         this.title = createElement('h2');
 
        
@@ -16,7 +16,7 @@ class Task{
         this.button4.hide();
         this.button5.hide();
         this.question.hide();
-        this.greeting.hide();
+        this.feedback.hide();
         this.title.hide();
     }
     display(){
@@ -25,10 +25,10 @@ class Task{
         this.button4.position(displayWidth/4+270,displayHeight/4+160);
         this.button5.position(displayWidth/4+100,displayHeight/4+160);
       
-        this.greeting.position(600,300); 
+        this.feedback.position(600,300); 
         this.title.position(600,200);
        
-       this.button2.mousePressed(()=>{
+ this.button2.mousePressed(()=>{
        
         this.button2.hide();
         this.button3.hide();
@@ -37,61 +37,54 @@ class Task{
          this.question.hide();
          red.x = 200;
          red.y = 200;
-          this.greeting.html("Correct Answer")
-          this.greeting.style('color','rgb(0, 255, 0)');
+          this.feedback.html("Correct Answer")
+          this.feedback.style('color','rgb(0, 255, 0)');
         this.title.html("press SPACE key for task-2")
         applause.play();      
     })
     
-         this.button3.mousePressed(()=>{
-          // burst = createSprite(1250,150);
-          // burst.addImage("burst",burstImg);
-          // burst.scale = 0.7;
-       
-            this.button2.hide();
+  this.button3.mousePressed(()=>{
+           this.button2.hide();
              this.button3.hide();
              this.button4.hide();
              this.button5.hide();
-            this.greeting.html('Wrong Answer');
-          this.greeting.style('color','red');
-          this.title.html("press SPACE key for task-2")
+            this.feedback.html('Wrong Answer');
+          this.feedback.style('color','red');
           glass_break.play();
           red.destroy();  
-      
+          restart1 = new Restart1();
+          restart1.display();
+     this.question.hide();
          })
 
-         this.button4.mousePressed(()=>{
-          // burst = createSprite(1250,150);
-            //  burst.addImage("burst",burstImg);
-            //  burst.scale = 0.7;
-           
+  this.button4.mousePressed(()=>{
+            
           this.button2.hide();
            this.button3.hide();
            this.button4.hide();
              this.button5.hide();
-             this.greeting.html("Wrong Answer");
-             this.greeting.style('color','red');
-             this.title.html("press SPACE key for task-2")
+             this.feedback.html("Wrong Answer");
+             this.feedback.style('color','red');
              glass_break.play();
              red.destroy();  
-             
+             restart1 = new Restart1();
+             restart1.display();
+        this.question.hide();
          })
 
-         this.button5.mousePressed(()=>{
-         
-          // burst = createSprite(1250,150);
-          // burst.addImage("burst",burstImg);
-          // burst.scale = 0.7;
+  this.button5.mousePressed(()=>{
+        
              this.button2.hide();
            this.button3.hide();
            this.button4.hide();
              this.button5.hide();
-            this.greeting.html("Wrong Answer");
-            this.greeting.style('color','red');
-            this.title.html("press SPACE key for task-2")
+            this.feedback.html("Wrong Answer");
+            this.feedback.style('color','red');
          glass_break.play()
          red.destroy();  
-       
+         restart1 = new Restart1();
+         restart1.display();
+ this.question.hide();
          })
         
         this.question.html("Question :- Peter's father has five sons. The names of four sons are Fefe, Fifi, Fafa and Fufu respectively. What is the name of the fifth son? 🤔")

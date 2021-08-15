@@ -2,7 +2,6 @@ class Interval{
 
  constructor(){
         this.greetings = createElement('h2');
-        //  this.button11 = createButton('Restart');
         this.greetings2 = createElement('h2')
         this.button11 = createButton('Task3➡️');
         this.greetings3 = createElement('h2');
