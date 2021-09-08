@@ -1,9 +1,9 @@
 class Task{
     constructor(){
-        this.button2 = createButton('Peter');
-        this.button3 = createButton('Peetr');
-        this.button4 = createButton('fnfn');
-        this.button5 = createButton('fvfv');
+        this.button2 = createButton('1: Peter');
+        this.button3 = createButton('3: Peetr');
+        this.button4 = createButton('4: fnfn');
+        this.button5 = createButton('2: fvfv');
         this.question  = createElement('h2');
         this.feedback = createElement('h2');
         this.title = createElement('h2');
@@ -20,13 +20,13 @@ class Task{
         this.title.hide();
     }
     display(){
-        this.button2.position(displayWidth/4+270,displayHeight/4+100);
-        this.button3.position(displayWidth/4+100,displayHeight/4+100);
-        this.button4.position(displayWidth/4+270,displayHeight/4+160);
-        this.button5.position(displayWidth/4+100,displayHeight/4+160);
+        this.button2.position(700,360);
+        this.button3.position(970,460);
+        this.button4.position(700,460);
+        this.button5.position(970,360);
       
-        this.feedback.position(600,300); 
-        this.title.position(600,200);
+        this.feedback.position(885,350); 
+        this.title.position(840,300);
        
  this.button2.mousePressed(()=>{
        
@@ -36,14 +36,15 @@ class Task{
         this.button5.hide();
          this.question.hide();
          red.x = 200;
-         red.y = 200;
+         red.y = 190;
           this.feedback.html("Correct Answer")
           this.feedback.style('color','rgb(0, 255, 0)');
-        this.title.html("press SPACE key for task-2")
+        this.title.html("Press SPACE key for task-2")
         applause.play();      
     })
     
   this.button3.mousePressed(()=>{
+
            this.button2.hide();
              this.button3.hide();
              this.button4.hide();

@@ -19,18 +19,19 @@ class Form{
     
     display(){
      this.title.html("Game of Hats");
-     this.title.position(displayWidth/2-20,20);
+     this.title.position(900,20);
     this.title.style('color','red');
-     this.button.position(displayWidth/2,displayHeight/2);
+     this.button.position(900,410);
    //   this.button2.position(displayWidth/4,displayHeight/4+80);
      
      this.greeting.html("All the best !");
-     this.greeting.position(displayWidth/2-20,displayHeight/4)
+     this.greeting.position(900,205)
    this.greeting.style('color','green');
-   
+console.log(this.greeting)   
      
      
      this.button.mousePressed(()=>{
+       click.play();
       this.button.hide();
       game.play();
     })

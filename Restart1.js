@@ -1,16 +1,17 @@
 class Restart1{
     constructor(){
-        this.Restart = createButton('Restart');
+        this.Button = createButton('Restart');
     }
     hide(){
-        this.Restart.hide();     
+        this.Button.hide();     
     }
     display(){
-    this.Restart.position(600,400);
+    this.Button.position(900,400);
     
-     this.Restart.mousePressed(()=>{
+     this.Button.mousePressed(()=>{
+        click.play();
          reset();
-         this.Restart.hide();
+         this.Button.hide();
     })
     }
 }

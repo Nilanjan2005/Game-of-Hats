@@ -19,11 +19,11 @@ this.greetings3.hide();
      this.greetings.html("CONGRATS!!!Your HERO is upgraded ");
      this.greetings.style('color','white');
 
-     this.greetings2.position(820,80);
+     this.greetings2.position(1040,80);
      this.greetings2.html("*Achieved Hats🤠🤠:-");
      this.greetings2.style('color','white')
 
-     this.button11.position(1250,600);
+     this.button11.position(1450,700);
      this.greetings3.position(100,50);
 
      this.button11.mousePressed(()=>{
@@ -35,7 +35,7 @@ this.greetings3.hide();
    table.destroy();   
    this.greetings3.html("TASK -3");
    this.greetings3.style('color','Blue');
-    blue = createSprite(1250,150);
+    blue = createSprite(1600,150);
     blue.addImage(bluehat);
 
   task3 = new Task3();
