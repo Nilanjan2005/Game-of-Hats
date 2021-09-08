@@ -12,20 +12,20 @@ var applause,glass_break,confetti_sound,sound2,click;
 var gameOver,gameover;
 
 function preload(){
-      backgroundImage2 = loadImage("Images/background2.png")
-      characterImage = loadImage("Images/character boy1.png");
-      character2Img = loadImage("Images/character2.png");
-      blackhat = loadImage("Images/black hat.png");
-      bluehat = loadImage("Images/blue hat.png");
-      redhat = loadImage("Images/red hat.png")
-      yellowhat = loadImage("Images/yellow hat.png")
-      whitehat = loadImage("Images/white hat.png");
+      backgroundImage2 = loadImage("background2.png")
+      characterImage = loadImage("character boy1.png");
+      character2Img = loadImage("character2.png");
+      blackhat = loadImage("black hat.png");
+      bluehat = loadImage("blue hat.png");
+      redhat = loadImage("red hat.png")
+      yellowhat = loadImage("yellow hat.png")
+      whitehat = loadImage("white hat.png");
       applause = loadSound("applause_sound.wav");
       sound2 = loadSound("sound2.mp3");
       glass_break = loadSound("glass_break.wav");
       confetti_sound = loadSound("confetti sound.mp3");
       click = loadSound("click.mp3");
-      gameOver = loadImage("Images/Gameover.png");
+      gameOver = loadImage("Gameover.png");
 }
 function setup() {
   database = firebase.database();
